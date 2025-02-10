@@ -24,7 +24,7 @@ app.use(cors(corsOptions));
 // Session
 app.use(
   session({
-    secret: process.env.SECRET_KEY,
+    secret: process.env.SECRET_KEY||'listos23423sdsds',
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false } // Configura `secure: true` si usas HTTPS
