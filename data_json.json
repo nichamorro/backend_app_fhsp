@@ -1,0 +1,16 @@
+{
+    "universidad":{
+       "id":"",
+       "nombre":"",
+       "ciudad":"",
+       "contacto":"",
+       "email":""
+    },
+    "documento":{
+       "id":"",
+       "universidad_id":"",
+       "nombre_archivo":"",
+       "fecha_subida":"",
+       "estado_aprovacion":""
+    }
+ }

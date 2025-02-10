@@ -1,1 +1,3 @@
-# backend_app_fhsp
+# backend sistema creado con expressjs js api
+# npm run dev
+# despliegue npm start
