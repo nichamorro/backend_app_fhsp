@@ -10,7 +10,16 @@ require('dotenv').config();
 // Conectar a MongoDB
 connectDB();
 
-app.use(cors())
+
+//app.use(cors())
+// Configura CORS para permitir tu dominio específico
+const corsOptions = {
+  origin: 'https://tanstack-react-vite-template-production-5d93.up.railway.app', // Reemplaza con tu dominio frontend
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+};
+
+app.use(cors(corsOptions));
 
 // Session
 app.use(
